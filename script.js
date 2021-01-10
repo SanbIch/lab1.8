@@ -56,3 +56,39 @@ for (let i = 0; i < 8; i++)
 console.log(output);
 
 console.groupEnd();
+
+
+/*---Задание 4---*/
+
+
+let nums = [30, 4, 90, 2, -6];
+
+console.group("Задание 4");
+
+function printArr (numsArr)
+{
+    let arr_str = ""
+    for(let i = 0; i < numsArr.length; i++) 
+    {
+        arr_str += numsArr[i] + " ";
+    }
+    console.log(arr_str);
+}
+
+printArr(nums);
+
+for(let i = 0; i < nums.length - 1; i++) 
+{
+    for(let j = 0; j < nums.length - 1 - i; j++) 
+    {
+       if(nums[j + 1] < nums[j]) 
+       {
+           let t = nums[j + 1];
+           nums[j + 1] = nums[j];
+           nums[j] = t;
+       } 
+    }
+}
+printArr(nums);
+
+console.groupEnd();
