@@ -92,3 +92,21 @@ for(let i = 0; i < nums.length - 1; i++)
 printArr(nums);
 
 console.groupEnd();
+
+
+/*---Задание 5---*/
+
+
+let nums2 = [2, -1, 0, -5, -4];
+let max = nums2[0];
+
+console.group("Задание 5");
+
+printArr(nums2);
+for(let i = 0; i < nums2.length; i++) 
+{
+    if(max < nums2[i]) max = nums2[i];
+}
+console.log(max);
+
+console.groupEnd();
