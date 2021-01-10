@@ -13,3 +13,19 @@ for(let i = 1; i <= n; i++)
 console.log(output);
 
 console.groupEnd();
+
+
+/*---Задание 2---*/
+
+
+let check = "";
+
+console.group("Задание 2");
+
+for (let i = 0; i < 16; i++)
+{
+    let check = !Boolean(i % 2);
+    console.log(`${i} - ${check ? "четное" : "нечетное"}`);
+}
+
+console.groupEnd();
