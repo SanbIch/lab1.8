@@ -29,3 +29,30 @@ for (let i = 0; i < 16; i++)
 }
 
 console.groupEnd();
+
+
+/*---Задание 3---*/
+
+
+output = "";
+
+console.group("Задание 3");
+
+for (let i = 0; i < 8; i++)
+{
+    if (i == 7)
+    {
+        output += "# # # # ";
+    }
+    else if (i % 2)
+    {
+        output += "# # # # \n";
+    }
+    else
+    {
+        output += " # # # #\n";
+    }
+}
+console.log(output);
+
+console.groupEnd();
